@@ -11,6 +11,7 @@ exports.calculate = function(req, res) {
   });
 
   var operations = {
+    // usar os sinais de + para evitar string concat
     'add':      function(a,b) { return +a + +b },
     'subtract': function(a,b) { return a - b },
     'multiply': function(a,b) { return a * b },
